@@ -33,11 +33,31 @@ header {
   border: 3px solid black;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: (const grid row, 1fr);
-  grid-template-rows: (const grid column, 1fr);
+  grid-gap: 0;
 }
 
 .gridCell {
   border: 1px solid black;
-  
+  margin-top: 0;
+  margin-bottom: 0;
+  bottom: 0;
+  background: white;
+}
+
+.colorChange {
+  background-color: blue;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+button {
+  background: rgba(54, 69, 79, 1);
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  cursor: pointer;
 }
